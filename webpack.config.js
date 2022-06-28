@@ -27,7 +27,7 @@ module.exports = {
   plugins: [
     new ModuleFederationPlugin({
         remotes: {
-          "ngPlanning": "http://localhost:5001/remoteEntry.js"
+          "ngPlanning": "ngPlanning@http://localhost:5001/remoteEntry.js",
         },
         shared: share({
           "@angular/core": { singleton: true, strictVersion: true, requiredVersion: 'auto' }, 

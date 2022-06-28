@@ -7,7 +7,7 @@ const routes: Routes = [
     path: 'planning',
     loadChildren: () => loadRemoteModule({
       remoteEntry: 'http://localhost:5001/remoteEntry.js',
-      remoteName: 'ngPlanning',
+      type: "module",
       exposedModule: './PlanningModule',
     }).then(m => m.PlanningModule)
   }
